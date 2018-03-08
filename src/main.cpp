@@ -1,10 +1,12 @@
 #include <iostream>
-#include "../lib/STL/STL.h"
+#include "../lib/container/vector/vector.h"
 
 int main()
 {
-    std::cout << "Program is running" << std::endl;
+    std::cout << "[main]: Program is running" << std::endl;
     using namespace philous;
-    STL stl, stl1;
+    vector<int> v;
+    // vector<int> v1(v);
+    // vector<int> v2 = v;
     return 0;
 }

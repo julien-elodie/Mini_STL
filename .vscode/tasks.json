@@ -18,7 +18,7 @@
         {
             "taskName": "make",
             "args": ["make -j 8"],
-            "isBuildCommand": true            
+            "isBuildCommand": true    
         }
     ]
 }

@@ -13,7 +13,8 @@ Configuration configuration = {
 STL::STL(bool verbose) : config(configuration)
 {
     verbose = verbose;
-    if (verbose) {
+    if (verbose)
+    {
         alert("[STL]: STL has been created.");
         if (!count)
         {
@@ -25,17 +26,20 @@ STL::STL(bool verbose) : config(configuration)
 
 STL::~STL()
 {
-    if(verbose){
+    if (verbose)
+    {
         alert("[STL]: STL has been deleted.");
     }
 }
 
-void STL::enableVerbose() {
-    verbose = TRUE;
+void STL::setVerbose(bool verbose)
+{
+    verbose = verbose;
 }
 
-void STL::disableVerbose() {
-    verbose = FALSE;
+bool STL::getVerbose()
+{
+    return verbose;
 }
 
 void STL::alert(std::string info)
